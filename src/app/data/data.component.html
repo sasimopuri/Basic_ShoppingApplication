@@ -1,0 +1,17 @@
+<app-filter (filter)="selectedfilter($event)"></app-filter>
+<div class="container">
+    <div class="con2" *ngFor="let person of filtered" >
+        <div class="img">
+            <img [src]="person.image" alt="" style="width: 300px ; height: 300px;">
+        </div>
+        <hr>
+        <div class="info">
+            <ul>
+                <li>{{person.title}}</li>
+                <li>{{person.category}}</li>
+                <li>${{person.price}}</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
