@@ -34,12 +34,7 @@ export class DataComponent implements OnInit {
       }
     }
    
-
     filtercategory(category: string){
         this.filtered=this.data.filter(person => person.category===category)
-
     }
-  
-    
-    
 }
